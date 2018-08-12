@@ -16,7 +16,7 @@ struct RouteItemViewModel {
     let price: Int
     
     private static let dateFormatter: DateFormatter = {
-        let formaewtter = DateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, h:mm a"
         formatter.doesRelativeDateFormatting = true
         return formatter
