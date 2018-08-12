@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct RecentRoutes {
+struct RouteItem {
     let date: Date
     let startStop: String
     let endStop: String
-    let price: Int
+    let price: Double
 }

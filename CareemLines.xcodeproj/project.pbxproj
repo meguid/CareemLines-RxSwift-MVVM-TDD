@@ -14,7 +14,8 @@
 		BF6428302120832F00016B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64282E2120832F00016B5C /* LaunchScreen.storyboard */; };
 		BF64283B2120832F00016B5C /* CareemLinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64283A2120832F00016B5C /* CareemLinesTests.swift */; };
 		BF6428462120832F00016B5C /* CareemLinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428452120832F00016B5C /* CareemLinesUITests.swift */; };
-		BF642855212085B500016B5C /* RecentRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF642854212085B500016B5C /* RecentRoutes.swift */; };
+		BF642855212085B500016B5C /* RouteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF642854212085B500016B5C /* RouteItem.swift */; };
+		BF642857212086B000016B5C /* RouteItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF642856212086B000016B5C /* RouteItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,8 @@
 		BF6428412120832F00016B5C /* CareemLinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareemLinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6428452120832F00016B5C /* CareemLinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareemLinesUITests.swift; sourceTree = "<group>"; };
 		BF6428472120832F00016B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF642854212085B500016B5C /* RecentRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRoutes.swift; sourceTree = "<group>"; };
+		BF642854212085B500016B5C /* RouteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteItem.swift; sourceTree = "<group>"; };
+		BF642856212086B000016B5C /* RouteItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,8 @@
 		BF6428532120857F00016B5C /* Recent Routes */ = {
 			isa = PBXGroup;
 			children = (
-				BF642854212085B500016B5C /* RecentRoutes.swift */,
+				BF642854212085B500016B5C /* RouteItem.swift */,
+				BF642856212086B000016B5C /* RouteItemViewModel.swift */,
 			);
 			path = "Recent Routes";
 			sourceTree = "<group>";
@@ -271,7 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF6428282120832E00016B5C /* ViewController.swift in Sources */,
-				BF642855212085B500016B5C /* RecentRoutes.swift in Sources */,
+				BF642857212086B000016B5C /* RouteItemViewModel.swift in Sources */,
+				BF642855212085B500016B5C /* RouteItem.swift in Sources */,
 				BF6428262120832E00016B5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
