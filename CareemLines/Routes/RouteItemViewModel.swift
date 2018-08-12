@@ -18,14 +18,15 @@ struct RouteItemViewModel {
     private static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, h:mm a"
-        formatter.doesRelativeDateFormatting = true
+        formatter.amSymbol = "am"
+        formatter.pmSymbol = "pm"
         return formatter
     }()
     
     init(routeItem: RouteItem) {
         self.startStop = routeItem.startStop
         self.endStop = routeItem.endStop
-        self.price = Int(routeItem.price)
+        self.price = Int(round(routeItem.price))
         self.dateString = RouteItemViewModel.dateFormatter.string(from: routeItem.date)
     }
 }
