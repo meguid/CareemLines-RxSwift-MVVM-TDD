@@ -10,6 +10,7 @@ import Foundation
 
 struct UserItemViewModel {
     let name: String
+//    let image: UIImage
     let recentRoutes: [RouteItemViewModel]
 }
 

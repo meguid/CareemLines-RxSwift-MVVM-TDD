@@ -12,7 +12,7 @@ private let reuseIdentifier = "RecentRoutes"
 
 class RecentRoutesView: UICollectionViewController {
     
-    private var listViewModels: [RouteItemViewModel]? {
+    var listViewModels: [RouteItemViewModel]? {
         didSet {
             self.collectionView?.reloadData()
         }
@@ -29,7 +29,7 @@ class RecentRoutesView: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RecentRoutesCell
-        cell.configure(withViewModel: listViewModels![indexPath.row])
+        cell.viewModel = listViewModels![indexPath.row]
         return cell
     }
 }

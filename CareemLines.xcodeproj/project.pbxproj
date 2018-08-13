@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF6428262120832E00016B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428252120832E00016B5C /* AppDelegate.swift */; };
-		BF6428282120832E00016B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428272120832E00016B5C /* ViewController.swift */; };
 		BF64282B2120832F00016B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6428292120832F00016B5C /* Main.storyboard */; };
 		BF64282D2120832F00016B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF64282C2120832F00016B5C /* Assets.xcassets */; };
 		BF6428302120832F00016B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF64282E2120832F00016B5C /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		BF6428602120CF3F00016B5C /* UserItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64285F2120CF3F00016B5C /* UserItemViewModel.swift */; };
 		BF6428622120D14800016B5C /* RecentRoutesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428612120D14800016B5C /* RecentRoutesCell.swift */; };
 		BF6428662120D2F400016B5C /* RecentRoutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428652120D2F400016B5C /* RecentRoutesView.swift */; };
+		BF6428682120D98400016B5C /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6428672120D98400016B5C /* UserHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 /* Begin PBXFileReference section */
 		BF6428222120832E00016B5C /* CareemLines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareemLines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6428252120832E00016B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF6428272120832E00016B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF64282A2120832F00016B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF64282C2120832F00016B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF64282F2120832F00016B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		BF64285F2120CF3F00016B5C /* UserItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemViewModel.swift; sourceTree = "<group>"; };
 		BF6428612120D14800016B5C /* RecentRoutesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRoutesCell.swift; sourceTree = "<group>"; };
 		BF6428652120D2F400016B5C /* RecentRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentRoutesView.swift; sourceTree = "<group>"; };
+		BF6428672120D98400016B5C /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +113,8 @@
 			children = (
 				BF6428252120832E00016B5C /* AppDelegate.swift */,
 				BF64285A212096CA00016B5C /* Helpers.swift */,
-				BF6428272120832E00016B5C /* ViewController.swift */,
-				BF64285C2120CF1200016B5C /* User */,
-				BF6428532120857F00016B5C /* Routes */,
+				BF64285C2120CF1200016B5C /* User Home */,
+				BF6428532120857F00016B5C /* Recent Routes */,
 				BF6428292120832F00016B5C /* Main.storyboard */,
 				BF64282C2120832F00016B5C /* Assets.xcassets */,
 				BF64282E2120832F00016B5C /* LaunchScreen.storyboard */,
@@ -143,7 +142,7 @@
 			path = CareemLinesUITests;
 			sourceTree = "<group>";
 		};
-		BF6428532120857F00016B5C /* Routes */ = {
+		BF6428532120857F00016B5C /* Recent Routes */ = {
 			isa = PBXGroup;
 			children = (
 				BF6428652120D2F400016B5C /* RecentRoutesView.swift */,
@@ -151,15 +150,16 @@
 				BF642856212086B000016B5C /* RouteItemViewModel.swift */,
 				BF642854212085B500016B5C /* RouteItem.swift */,
 			);
-			path = Routes;
+			path = "Recent Routes";
 			sourceTree = "<group>";
 		};
-		BF64285C2120CF1200016B5C /* User */ = {
+		BF64285C2120CF1200016B5C /* User Home */ = {
 			isa = PBXGroup;
 			children = (
+				BF6428672120D98400016B5C /* UserHomeView.swift */,
 				BF64285F2120CF3F00016B5C /* UserItemViewModel.swift */,
 			);
-			path = User;
+			path = "User Home";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF6428282120832E00016B5C /* ViewController.swift in Sources */,
+				BF6428682120D98400016B5C /* UserHomeView.swift in Sources */,
 				BF6428602120CF3F00016B5C /* UserItemViewModel.swift in Sources */,
 				BF642857212086B000016B5C /* RouteItemViewModel.swift in Sources */,
 				BF642855212085B500016B5C /* RouteItem.swift in Sources */,
